@@ -705,7 +705,8 @@ footer{
 .reveal.in{opacity:1;transform:none}
 
 /* ─── language display ──────────────────────────────────────── */
-[lang-en],[lang-yo],[lang-ig],[lang-ha]{display:none}
+[lang-yo],[lang-ig],[lang-ha]{display:none}
+[lang-en]{display:inline}
 
 /* ─── responsive ─────────────────────────────────────────────── */
 @media(max-width:900px){
@@ -727,6 +728,15 @@ footer{
 </style>
 </head>
 <body>
+
+<!-- ─── PROTOTYPE BANNER ──────────────────────────────────────── -->
+<div style="background:#0A2415;border-bottom:1px solid rgba(93,187,99,.2);padding:10px 48px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Outfit',system-ui,sans-serif;font-size:.8rem;position:relative;z-index:300">
+  <div style="display:flex;align-items:center;gap:10px">
+    <span style="background:rgba(93,187,99,.15);border:1px solid rgba(93,187,99,.3);color:#5DBB63;border-radius:100px;padding:2px 10px;font-weight:700;font-size:.68rem;letter-spacing:.8px;text-transform:uppercase">Prototype</span>
+    <span style="color:rgba(255,255,255,.5)">This is a preview of CoverShield — not a live product. No real policies are being sold. <strong style="color:rgba(255,255,255,.75)">Sign up below to join the testing group.</strong></span>
+  </div>
+  <a href="#waitlist" style="color:#5DBB63;font-weight:600;white-space:nowrap;text-decoration:none">Join waitlist →</a>
+</div>
 
 <!-- ─── NAV ─────────────────────────────────────────────────── -->
 <nav id="nav">
@@ -776,17 +786,17 @@ footer{
       </div>
 
       <h1>
-        <span lang-en>Your car.<br/><em>Insured</em> in two<br/>minutes. <span class="ul">For real.</span></span>
+        <span lang-en>Vehicle insurance<br/>that <em>actually</em> works<br/>in <span class="ul">Lagos.</span></span>
         <span lang-yo>Ọkọ rẹ.<br/><em>Ẹ̀dá aabo</em> ní<br/>ìsẹ́jú méjì. <span class="ul">Ní tòótọ́.</span></span>
         <span lang-ig>Ụgbọ ala gị.<br/><em>Nchedo</em> n'ime<br/>nkeji abụọ. <span class="ul">N'ezigbo.</span></span>
         <span lang-ha>Motarka.<br/><em>An rufe</em> cikin<br/>mintoci biyu. <span class="ul">Da gaske.</span></span>
       </h1>
 
       <p class="hero-lead">
-        <span lang-en>Real vehicle insurance — not a sticker, not a paper policy that disappears at the claims desk. Verified by AI. Recognised by FRSC at any checkpoint. Backed by NAICOM.</span>
-        <span lang-yo>Ẹ̀dá aabo ọkọ gidi — kì í ṣe sticker, kì í ṣe ìwé àṣẹ tí ó ń ṣàì-sí ní ọ́fíìsì ìkórè. Tí AI fọwọ́sí rẹ̀. Tí FRSC mọ̀ ní àyẹ̀wò kankan. Tí NAICOM ṣìnilọ́wọ́.</span>
-        <span lang-ig>Mkpado ụgbọ ala n'ezigbo — ọ bụghị sticker, ọ bụghị akwụkwọ iwu na-apụghị na teebụl mkpesa. AI kwenyere ya. FRSC mata ya n'ebe nlele ọ bụla. NAICOM na-akwado ya.</span>
-        <span lang-ha>Inshorar motoci ta gaske — ba sticker ba, ba takardar manufa da ke ɓacewa a tebur iƙirari ba. AI ya tabbatar da ita. FRSC sun san ta a duk daki-daki. NAICOM ta goyi bayanta.</span>
+        <span lang-en>A prototype for smarter vehicle insurance in Lagos. No agents. No paperwork. Just your phone, your plate number, and a policy that actually works. Sign up to be part of our testing group.</span>
+        <span lang-yo>Àtẹ̀jáde fun ẹ̀dá aabo ọkọ tó dára sí i ní Lagos. Kò sí aṣojú. Kò sí ìwé àṣẹ. Forúkọsílẹ̀ láti jẹ́ apá àwọn tó ń ṣàyẹ̀wò rẹ̀.</span>
+        <span lang-ig>Ihe nlele maka mkpado ụgbọ ala ka mma n'Lagos. Ọ dịghị onye nnọchiteanya. Ọ dịghị akwụkwọ. Debanye aha ka ị bụrụ otu n'ime ndị na-anwa ya.</span>
+        <span lang-ha>Samfurin inshorar motoci mafi kyau a Lagos. Babu wakili. Babu takarda. Yi rajista don zama cikin ƙungiyar gwaji ɗinmu.</span>
       </p>
 
       <div class="hero-ctas">
@@ -808,11 +818,11 @@ footer{
       <div class="hero-proof">
         <div class="proof-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span lang-en>NIIRA 2025 compliant</span><span lang-yo>Ó jọra NIIRA 2025</span><span lang-ig>Dabara na NIIRA 2025</span><span lang-ha>Daidai da NIIRA 2025</span>
+          <span lang-en>Prototype — in testing</span><span lang-yo>Àtẹ̀jáde — ń ṣàyẹ̀wò</span><span lang-ig>Ihe nlele — na-anwa ya</span><span lang-ha>Samfuri — ana gwaji</span>
         </div>
         <div class="proof-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <span lang-en>NAICOM licensed partner</span><span lang-yo>Alabaṣiṣẹpọ NAICOM</span><span lang-ig>Onye ọrụ NAICOM</span><span lang-ha>Abokancin NAICOM</span>
+          <span lang-en>Sign up for early access</span><span lang-yo>Forúkọsílẹ̀ fún ìráàwọ àkọ́kọ́</span><span lang-ig>Debanye aha maka ohere mbụ</span><span lang-ha>Yi rajista don farkon shiga</span>
         </div>
         <div class="proof-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
@@ -888,8 +898,8 @@ footer{
     </div>
     <div class="fact">
       <div class="fact-num"><span>60</span></div>
-      <div class="fact-label"><span lang-en>days — the maximum any insurer is now legally allowed to take to pay your claim under NIIRA 2025</span><span lang-yo>Ọjọ — iye àkókò tó pọ̀ jù tí ẹlẹ́dáaabo fọwọ́sí lábẹ́ NIIRA 2025</span><span lang-ig>Ụbọchị — oge kachasị oge iwu na-eme ka ndị mkpado kwụọ ụgwọ gị n'okpuru NIIRA 2025</span><span lang-ha>Kwanaki — mafi yawan lokacin da doka ta ba wa masana insho don biya iƙirarin ka a ƙarƙashin NIIRA 2025</span></div>
-      <div class="fact-sub"><span lang-en>We target 14</span><span lang-yo>A fojúsùn 14</span><span lang-ig>Anyị na-elekọta 14</span><span lang-ha>Mu muna niyya 14</span></div>
+      <div class="fact-label"><span lang-en>days — the average wait for a Nigerian insurance payout. We are building to do it in 14.</span><span lang-yo>Ọjọ — àkókò apapọ̀ tí àwọn Nàìjíríà ń dúró fún ìsanwó ẹ̀dá aabo. A ń kọ́ láti ṣe rẹ̀ ní ọjọ 14.</span><span lang-ig>Ụbọchị — oge nkezi ndị Naịjirịa na-echere maka ụgwọ mkpado. Anyị na-ewu iji mee ya n'ime ụbọchị 14.</span><span lang-ha>Kwanaki — matsakaicin lokacin da yan Najeriya ke jira don biyan insho. Muna gina don yi shi cikin kwana 14.</span></div>
+      <div class="fact-sub"><span lang-en>Our goal</span><span lang-yo>Èrò wa</span><span lang-ig>Ebumnuche anyị</span><span lang-ha>Manufarmu</span></div>
     </div>
     <div class="fact">
       <div class="fact-num"><span>2</span></div>
@@ -919,12 +929,12 @@ footer{
       <div class="pg-card">
         <div class="pg-num">01</div>
         <div class="pg-title"><span lang-en>Claims take months — sometimes they never come</span><span lang-yo>Ìkórè gba oṣù — nígbà míràn wọn kò dé</span><span lang-ig>Mkpesa na-ewe ọnwa — oge ụfọdụ ha na-abịaghị</span><span lang-ha>Iƙirari yana ɗaukar watanni — wani lokaci baya zuwa</span></div>
-        <div class="pg-text"><span lang-en>The average insurance claim in Nigeria sits in a queue for 90 to 180 days. Many policyholders give up before they're paid. NIIRA 2025 now mandates a 60-day ceiling. CoverShield targets 14 days — and publishes its claims payment data publicly every quarter.</span><span lang-yo>Ìkórè ẹ̀dá aabo àpapọ̀ ní Nàìjíríà jókòó nínú àkójọ fún ọjọ 90 sí 180. Ọ̀pọ̀ onírú àṣẹ fi ìkórè náà sílẹ̀ ṣáájú kí a tó san wọn. NIIRA 2025 jẹ́ kí ọjọ 60 jẹ́ ìdiwọ̀n. CoverShield fojúsùn ọjọ 14.</span><span lang-ig>Mkpesa mkpado nkezi n'Naịjirịa na-anọ n'ahịrị oge ụbọchị 90 ruo 180. Ọtụtụ ndị nwe iwu na-ahapụ tupu akwụọ ha. NIIRA 2025 gosipụtara iwu ụbọchị 60. CoverShield na-elekọta ụbọchị 14.</span><span lang-ha>Iƙirarin insho na gari a Najeriya yana zaune a jeri na kwana 90 zuwa 180. Yawancin masu manufa suna barin iƙirarin kafin a biya su. NIIRA 2025 yanzu ta sanya kololuwa na kwana 60. CoverShield tana niyya kwana 14.</span></div>
+        <div class="pg-text"><span lang-en>The average insurance claim in Nigeria sits in a queue for 90 to 180 days. Many policyholders give up and walk away before anything is paid. CoverShield is building around a 14-day target — and will publish payout data publicly once live.</span><span lang-yo>Ìkórè ẹ̀dá aabo àpapọ̀ ní Nàìjíríà jókòó nínú àkójọ fún ọjọ 90 sí 180. Ọ̀pọ̀ onírú àṣẹ fi ìkórè náà sílẹ̀ ṣáájú kí a tó san wọn. NIIRA 2025 jẹ́ kí ọjọ 60 jẹ́ ìdiwọ̀n. CoverShield fojúsùn ọjọ 14.</span><span lang-ig>Mkpesa mkpado nkezi n'Naịjirịa na-anọ n'ahịrị oge ụbọchị 90 ruo 180. Ọtụtụ ndị nwe iwu na-ahapụ tupu akwụọ ha. NIIRA 2025 gosipụtara iwu ụbọchị 60. CoverShield na-elekọta ụbọchị 14.</span><span lang-ha>Iƙirarin insho na gari a Najeriya yana zaune a jeri na kwana 90 zuwa 180. Yawancin masu manufa suna barin iƙirarin kafin a biya su. NIIRA 2025 yanzu ta sanya kololuwa na kwana 60. CoverShield tana niyya kwana 14.</span></div>
       </div>
       <div class="pg-card">
         <div class="pg-num">02</div>
         <div class="pg-title"><span lang-en>Sticker insurance is fake insurance</span><span lang-yo>Ẹ̀dá aabo sticker jẹ́ ẹ̀dá aabo ìtànjẹ</span><span lang-ig>Mkpado sticker bụ mkpado ụgha</span><span lang-ha>Inshorar sticker karya insho ce</span></div>
-        <div class="pg-text"><span lang-en>Millions of Nigerian vehicles carry roadside stickers sold for a few hundred naira. They look like insurance certificates. They are not. If you have an accident, there is nothing behind that sticker. CoverShield issues a NAICOM-registered policy — the real thing, verified against national databases.</span><span lang-yo>Àwọn mílíọ̀nù ọkọ Nàìjíríà gbé àwọn sticker tí wọ́n ta lójú ọ̀nà fún ọ̀pọ̀ ọgọ́rùn-ún naira. Wọ́n rí bíi ìwé ẹ̀rí ẹ̀dá aabo. Wọn kì í ṣe. Bí ìjamba bá ṣẹlẹ̀, kò sí ohun tó ṣe àfihàn sticker yẹn. CoverShield fún ni ìlànà tí a forúkọ sílẹ̀ pẹ̀lú NAICOM.</span><span lang-ig>Ọtụtụ nde ụgbọ ala Naịjirịa na-ebu sticker ndị a na-ere n'ụzọ maka ọtụtụ narị naira. Ha dị ka asambodo mkpado. Ha abụghị. Ọ bụrụ na ị nwee ihe ize ndụ, ọ dịghị ihe n'azụ sticker ahụ. CoverShield na-ewepụta iwu debanye aha NAICOM.</span><span lang-ha>Miliyoyin motocin Najeriya suna ɗaukar sticker da ake siyarwa a gefen hanya da ɗari da ɗari na naira. Suna kama da takardan shaida ta insho. Ba su ba. Idan ka sami hatsari, babu komai a bayan wannan sticker. CoverShield tana bayar da manufa da aka yi rajistarta da NAICOM.</span></div>
+        <div class="pg-text"><span lang-en>Millions of Nigerian vehicles carry roadside stickers sold for a few hundred naira. They look like insurance certificates. They are not. If you have an accident, there is nothing behind that sticker. CoverShield is building the infrastructure so your policy is the real thing — verifiable, backed by a licensed underwriter, enforceable.</span><span lang-yo>Àwọn mílíọ̀nù ọkọ Nàìjíríà gbé àwọn sticker tí wọ́n ta lójú ọ̀nà fún ọ̀pọ̀ ọgọ́rùn-ún naira. Wọ́n rí bíi ìwé ẹ̀rí ẹ̀dá aabo. Wọn kì í ṣe. Bí ìjamba bá ṣẹlẹ̀, kò sí ohun tó ṣe àfihàn sticker yẹn. CoverShield ń kọ́ àwọn ohun-èlò kí ìlànà rẹ le jẹ́ gidi.</span><span lang-ig>Ọtụtụ nde ụgbọ ala Naịjirịa na-ebu sticker ndị a na-ere n'ụzọ maka ọtụtụ narị naira. Ha dị ka asambodo mkpado. Ha abụghị. Ọ bụrụ na ị nwee ihe ize ndụ, ọ dịghị ihe n'azụ sticker ahụ. CoverShield na-ewu ihe ndabere ka iwu gị bụrụ ihe n'ezigbo.</span><span lang-ha>Miliyoyin motocin Najeriya suna ɗaukar sticker da ake siyarwa a gefen hanya da ɗari da ɗari na naira. Suna kama da takardan shaida ta insho. Ba su ba. Idan ka sami hatsari, babu komai a bayan wannan sticker. CoverShield yana gina kayan aikin don manufar ka ta zama ta gaske.</span></div>
       </div>
       <div class="pg-card">
         <div class="pg-num">03</div>
@@ -933,8 +943,8 @@ footer{
       </div>
       <div class="pg-card">
         <div class="pg-num">04</div>
-        <div class="pg-title"><span lang-en>Insurance is now compulsory — and enforceable</span><span lang-yo>Ẹ̀dá aabo ti jẹ́ dandan — àti tí a lè fipá mú</span><span lang-ig>Mkpado ugbu a bụ iwu — ma a nwere ike imekwu ya</span><span lang-ha>Insho yanzu wajibi ne — kuma ana aiwatar da shi</span></div>
-        <div class="pg-text"><span lang-en>The Nigerian Insurance Industry Reform Act 2025 expanded compulsory insurance and introduced real enforcement mechanisms — digital verification at roadside checks, fines for defaulters, and a compensation fund for victims of uninsured drivers. If you're on the road without cover, the risk is no longer just to your own pocket.</span><span lang-yo>Òfin NIIRA 2025 gbòòrò ẹ̀dá aabo dandan àti ṣe àfilọ́ àwọn ọ̀nà ìfipámú gidi — ìfọwọ́sí dígítà ní àwọn àyẹ̀wò lójú ọ̀nà, àwọn ìjẹninilára fún àwọn apani, àti ìpilẹ̀ṣẹ̀ ìsanwó fún àwọn tí wọ́n ṣe ìbàjẹ́ sí wọn.</span><span lang-ig>Iwu NIIRA 2025 gbasaa mkpado a chọrọ ma wetara usoro mmekwu n'ezigbo — nyocha dijital na ebe nlele n'ụzọ, ụgwọ ahụhụ maka ndị na-eme mmejọ, na ọchịchọ ntụpọ maka ndị metụrụ ahụ site n'aka ndị ọzọ chọghị mkpado. Ọ bụrụ na ị nọ n'ụzọ na-enweghị nchedo, ihe ize ndụ adịghị bụ naanị nke nkwụghachi ego gị.</span><span lang-ha>Dokar NIIRA 2025 ta fadada wajibin insho kuma ta gabatar da hanyoyin aiwatarwa na gaske — tabbatarwa ta dijital a duba kan hanya, tara ga masu laifi, da asusun diyya ga waɗanda abin ya shafa na masu motoci marasa insho. Idan kana kan hanya ba tare da kariya ba, haɗarin ba don aljihunka kaɗai ba ne.</span></div>
+        <div class="pg-title"><span lang-en>Nobody has solved this for everyday Lagos vehicle owners</span><span lang-yo>Kò sí ẹni tó ti yanjú èyí fún àwọn onírú ọkọ Lagos</span><span lang-ig>Onye ọ bụla emebeghị ya maka ndị nwe ụgbọ ala Lagos</span><span lang-ha>Babu wanda ya warware wannan ga masu motoci na Lagos</span></div>
+        <div class="pg-text"><span lang-en>Enterprise platforms are too expensive and too complex. Roadside stickers are worthless. Existing apps don't reach the informal vehicle owner or the Lagos SME with a small fleet. That's the gap CoverShield is built to fill — and we want real Lagos vehicle owners to help us get it right before we go live.</span><span lang-yo>Àwọn pẹpẹ ilé-iṣẹ gbówó jù. Àwọn sticker lójú ọ̀nà kò wulo. Àwọn ohun elo tó wà kò dé onírú ọkọ alásọkọ tàbí SME Lagos tó ní ọ̀pọ̀ ọkọ kékeré. Ìyàtọ̀ yẹn ni CoverShield ti kọ́ láti kún.</span><span lang-ig>Ngwaọrụ ụlọ ọrụ dị ọnụ ọgụgụ. Sticker n'ụzọ adịghị bara uru. Ihe a na-eji ugbu a adịghị eru onye nwe ụgbọ ala ọrụ ụlọ ma ọ bụ SME Lagos nwere otu ụgbọ ala obere. Oghere ahụ bụ nke CoverShield arụrụ iji juo.</span><span lang-ha>Dandamali na kasuwanci sun yi tsada. Sticker na gefen hanya ba su da amfani. Aikace-aikacen da ke akwai ba su kai ga mai motoci na yau da kullum ko SME na Lagos mai ƙaramin taron motoci ba. Wannan shine giɓin da CoverShield aka gina don cika.</span></div>
       </div>
     </div>
   </div>
@@ -954,10 +964,10 @@ footer{
         </h2>
       </div>
       <p class="cov-note">
-        <span lang-en>Every tier includes a NAICOM-registered digital certificate, FraudShield AI protection on every claim, and direct FRSC verification at any roadside checkpoint. No physical sticker. No branch visit. Enrol entirely from your phone in under two minutes.</span>
-        <span lang-yo>Gbogbo ìpele ní ìwé ẹ̀rí dígítà tí NAICOM forúkọ sílẹ̀, ìdáàbòbò AI FraudShield lórí gbogbo ìkórè, àti ìfọwọ́sí FRSC tàárà ní àyẹ̀wò lójú ọ̀nà kankan. Kò sí sticker. Kò sí bẹ̀wò ẹ̀ka. Fúnra rẹ ní lórí fóònu rẹ ní ìsẹ́jú méjì.</span>
-        <span lang-ig>Ọkwa ọ bụla gụnyere asambodo dijital debanye aha NAICOM, nchedo AI FraudShield n'mkpesa ọ bụla, na nyocha FRSC ozugbo n'ebe nlele n'ụzọ ọ bụla. Ọ dịghị sticker. Ọ dịghị nlọ ụlọ ọrụ. Debanye aha ozugbo site na ekwentị gị n'ime nkeji abụọ.</span>
-        <span lang-ha>Kowane matakin ya haɗa da takardar shaida ta dijital da NAICOM ta yi rajista, kariyar AI ta FraudShield a kan duk iƙirari, da tabbatarwa ta FRSC kai tsaye a duk daki-daki n'ụzọ. Babu sticker. Babu ziyartar reshe. Yi rajista gaba ɗaya daga wayar ka cikin ƙasa da mintoci biyu.</span>
+        <span lang-en>This prototype shows what each coverage tier would look like. The full product will include AI fraud protection on every claim. No physical sticker. No branch visit. Enrol entirely from your phone in under two minutes.</span>
+        <span lang-yo>Gbogbo ìpele ní ìwé ẹ̀rí dígítà, ìdáàbòbò AI FraudShield lórí gbogbo ìkórè, àti ìlànà tí ẹlẹ́dáaabo tó ní ìwé àṣẹ ṣìnilọ́wọ́. Kò sí sticker. Kò sí bẹ̀wò ẹ̀ka. Fúnra rẹ ní lórí fóònu rẹ ní ìsẹ́jú méjì.</span>
+        <span lang-ig>Ọkwa ọ bụla gụnyere asambodo dijital, nchedo AI FraudShield n'mkpesa ọ bụla, na iwu nke onye mkpado a kwadoro na-akwado. Ọ dịghị sticker. Ọ dịghị nlọ ụlọ ọrụ. Debanye aha ozugbo site na ekwentị gị n'ime nkeji abụọ.</span>
+        <span lang-ha>Kowane matakin ya haɗa da takardar shaida ta dijital, kariyar AI ta FraudShield a kan duk iƙirari, da manufa da mai insho mai lasisi ya biya. Babu sticker. Babu ziyartar reshe. Yi rajista gaba ɗaya daga wayar ka cikin ƙasa da mintoci biyu.</span>
       </p>
     </div>
     <div class="cov-grid">
@@ -966,17 +976,17 @@ footer{
         <div class="cc-badge"><span lang-en>Legal minimum</span><span lang-yo>Ìpín kéré jù</span><span lang-ig>Ọnụọgụ iwu kacha nta</span><span lang-ha>Ƙarancin doka</span></div>
         <div class="cc-title"><span lang-en>Third Party Basic</span><span lang-yo>Ẹgbẹ Kẹta Àkọ́kọ́</span><span lang-ig>Nke Ọzọ Isi</span><span lang-ha>Na Uku Asali</span></div>
         <div class="cc-desc">
-          <span lang-en>The minimum the law requires. If your vehicle causes injury or damage to another person or property, this covers them. Every vehicle on Nigerian roads must have it.</span>
-          <span lang-yo>Ìpín tí òfin beere. Tí ọkọ rẹ bá fà ìpalára tàbí ìbàjẹ́ sí ẹlòmíràn, èyí bò wọn. Gbogbo ọkọ lórí àwọn ọ̀nà Nàìjíríà gbọdọ̀ ní rẹ̀.</span>
-          <span lang-ig>Ihe kacha nta iwu chọrọ. Ọ bụrụ na ụgbọ ala gị kpata mmerụ ahụ ma ọ bụ ọtọ nye onye ọzọ ma ọ bụ ihe onwunwe, nke a na-ekpuchi ha. Ụgbọ ala ọ bụla n'ụzọ Naịjirịa kwesịrị inwe ya.</span>
-          <span lang-ha>Mafi ƙarancin abin da doka ta buƙata. Idan motarka ta haifar da rauni ko lalacewa ga wani mutum ko dukiya, wannan yana rufe su. Duk motoci a kan tituna Najeriya dole su samu ta.</span>
+          <span lang-en>The entry-level tier. If your vehicle causes injury or damage to another person or their property, this covers them. The most common coverage gap for Lagos vehicle owners.</span>
+          <span lang-yo>Ìpele àkọ́kọ́. Tí ọkọ rẹ bá fà ìpalára tàbí ìbàjẹ́ sí ẹlòmíràn tàbí ohun-ìní wọn, èyí bò wọn. Ìyàtọ̀ aabo tó wọ́pọ̀ jù fún àwọn onírú ọkọ Lagos.</span>
+          <span lang-ig>Ọkwa mbido. Ọ bụrụ na ụgbọ ala gị kpata mmerụ ahụ ma ọ bụ ọtọ nye onye ọzọ ma ọ bụ ihe onwunwe ha, nke a na-ekpuchi ha. Oghere nchedo ndị ama ama karịa maka ndị nwe ụgbọ ala Lagos.</span>
+          <span lang-ha>Mataki na farko. Idan motarka ta haifar da rauni ko lalacewa ga wani mutum ko dukiyarsu, wannan yana rufe su. Giɓin kariya da ya fi yaduwa ga masu motoci a Lagos.</span>
         </div>
         <ul class="cc-list">
           <li><span lang-en>Third-party bodily injury</span><span lang-yo>Ipalara ara ẹgbẹ-kẹta</span><span lang-ig>Mmerụ ahụ nke ọzọ</span><span lang-ha>Rauni na uku</span></li>
           <li><span lang-en>Third-party property damage</span><span lang-yo>Ìbàjẹ́ ohun-ìní ẹgbẹ-kẹta</span><span lang-ig>Ọtọ ihe nke ọzọ</span><span lang-ha>Lalacewa dukiyar na uku</span></li>
           <li><span lang-en>Road Safety Fund contribution</span><span lang-yo>Ìpín Ipilẹṣẹ Aabo Ọna</span><span lang-ig>Onyinye Ndọrọ Ụzọ</span><span lang-ha>Gudummawar Asusun Aminci</span></li>
           <li><span lang-en>Digital certificate via QR code</span><span lang-yo>Ìwé ẹ̀rí dígítà via QR</span><span lang-ig>Asambodo dijital site na QR</span><span lang-ha>Takaddun dijital ta QR</span></li>
-          <li><span lang-en>FRSC-verified at any checkpoint</span><span lang-yo>FRSC fọwọ́sí ní àyẹ̀wò kankan</span><span lang-ig>FRSC kwenyere n'ebe nlele ọ bụla</span><span lang-ha>FRSC ta tabbatar a duk daki-daki</span></li>
+          <li><span lang-en>Digital certificate on your phone</span><span lang-yo>Ìwé ẹ̀rí dígítà lórí fóònu rẹ</span><span lang-ig>Asambodo dijital n'ekwentị gị</span><span lang-ha>Takaddun dijital a wayar ka</span></li>
         </ul>
       </div>
 
@@ -1043,14 +1053,14 @@ footer{
           <div class="snum">01</div>
           <div class="stext">
             <div class="step-title"><span lang-en>Verify who you are</span><span lang-yo>Ìfọwọ́sí tí ìwọ jẹ́</span><span lang-ig>Kwenye onye ị bụ</span><span lang-ha>Tabbatar da wane kai ne</span></div>
-            <div class="step-body"><span lang-en>Enter your BVN or NIN. CoverShield verifies your identity instantly against official NIBSS records — the same system Nigerian banks use. No document uploads. No selfies. No waiting.</span><span lang-yo>Tẹ BVN tàbí NIN rẹ. CoverShield ṣàyẹ̀wò ìdánimọ̀ rẹ lẹ́sẹ̀kẹsẹ lòdì sí àwọn àkọsílẹ̀ NIBSS tó jẹ́ ti orílẹ̀-èdè — ètò tí àwọn ilé-ìfowópamọ́ Nàìjíríà ń lò. Kò sí gbígba àwọn ìwé. Kò sí àwòrán ara ẹni. Kò sí ìdúró.</span><span lang-ig>Tinye BVN ma ọ bụ NIN gị. CoverShield na-enyocha nnabata gị ozugbo megide ndekọ NIBSS ọchụchọ — usoro ụlọ akụ Naịjirịa na-eji. Ọ dịghị iwebata akwụkwọ. Ọ dịghị selfie. Ọ dịghị ịchere.</span><span lang-ha>Shigar da BVN ko NIN ɗinka. CoverShield tana tabbatar da shairanku nan take da kuma bayanan NIBSS na hukuma — tsarin iri ɗaya da bankunan Najeriya ke amfani da shi. Babu loda takarda. Babu selfie. Babu jira.</span></div>
+            <div class="step-body"><span lang-en>Enter your BVN or NIN. Quick identity check — no document uploads, no selfies. In the live product this connects to national identity infrastructure.</span><span lang-yo>Tẹ BVN tàbí NIN rẹ. Àyẹ̀wò ìdánimọ̀ kíákíá — kò sí gbígba àwọn ìwé, kò sí àwòrán ara ẹni. Nínú ọjà gidi, èyí sopọ sí àwọn ohun-èlò ìdánimọ̀ orílẹ̀-èdè.</span><span lang-ig>Tinye BVN ma ọ bụ NIN gị. Inyocha nnabata ngwa ngwa — ọ dịghị iwebata akwụkwọ, ọ dịghị selfie. N'ngwaahịa dị ndụ, nke a na-ejikọ na ihe ndabere nnabata mba.</span><span lang-ha>Shigar da BVN ko NIN ɗinka. Duba sharranka da sauri — babu loda takarda, babu selfie. A cikin kayan aiki na gaske, wannan yana haɗawa da ababen more sharranta na ƙasa.</span></div>
           </div>
         </div>
         <div class="step" data-sc="1" onclick="setStep(this)">
           <div class="snum">02</div>
           <div class="stext">
             <div class="step-title"><span lang-en>Enter your plate number</span><span lang-yo>Tẹ nọ́mbà àwo rẹ</span><span lang-ig>Tinye nọmba efere gị</span><span lang-ha>Shigar da lambar farantinka</span></div>
-            <div class="step-body"><span lang-en>Type your vehicle plate number. Our system looks it up in the FRSC and MVAA national databases, confirms the vehicle exists and is registered to you, and cross-checks for ghost vehicle or duplicate policy fraud. This step is what separates real insurance from a roadside sticker.</span><span lang-yo>Tẹ nọ́mbà àwo ọkọ rẹ. Ètò wa wa a nínú àwọn àkójọpọ̀ data orílẹ̀-èdè FRSC àti MVAA, jẹ́rìí ọkọ bá wà àti tí a forúkọ sílẹ̀ sí ọ, àti ṣàyẹ̀wò fún jìbìtì ọkọ ẹ̀mí ìtànjẹ tàbí ìwé àṣẹ ẹlẹ́ẹ̀mejì. Ìgbésẹ̀ yìí ni ohun tó yà ẹ̀dá aabo gidi kúrò nínú sticker lójú ọ̀nà.</span><span lang-ig>Pịnye nọmba efere ụgbọ ala gị. Usoro anyị na-achọ ya n'ntanetị mba FRSC na MVAA, kwenye na ụgbọ ala ahụ dị ebe ọ bụ ma debanye aha ya n'aha gị, ma na-enyocha maka ụgbọ ala mmụọ ma ọ bụ aghụghọ iwu abụọ. Nzọụkwụ a bụ ihe na-ekewapụ mkpado n'ezigbo site na sticker n'ụzọ.</span><span lang-ha>Rubuta lambar farantin motarka. Tsarinmu yana neman ta a bayanan ƙasa na FRSC da MVAA, tabbatar da cewa motarka tana wanzu kuma an yi rajistarta a hannunka, da kuma duba don motocin fatalwa ko zamba na manufar biyu. Wannan matakin shine abin da ke raba insho na gaske daga sticker na gefen hanya.</span></div>
+            <div class="step-body"><span lang-en>Enter your plate number and vehicle details. In the live product this will cross-check vehicle registration data to catch ghost vehicles and duplicate policy fraud — the most common motor insurance scams in Lagos.</span><span lang-yo>Tẹ nọ́mbà àwo ọkọ rẹ. A ṣàyẹ̀wò rẹ̀ lòdì sí data ìforúkọsílẹ̀ ọkọ orílẹ̀-èdè láti jẹ́rìí pé ọkọ bá wà, lẹ́yìn náà ṣàyẹ̀wò fún jìbìtì ọkọ ẹ̀mí ìtànjẹ tàbí ìwé àṣẹ ẹlẹ́ẹ̀mejì.</span><span lang-ig>Pịnye nọmba efere ụgbọ ala gị. Anyị na-enyocha ya megide data ndebanye aha ụgbọ ala mba iji kwenye na ụgbọ ala ahụ dị, wee nyocha maka ụgbọ ala mmụọ ma ọ bụ aghụghọ iwu abụọ.</span><span lang-ha>Rubuta lambar farantin motarka. Muna duba ta da bayanan rajistan motoci na ƙasa don tabbatar da cewa motarka tana wanzu, sannan duba don motocin fatalwa ko zamba na manufar biyu.</span></div>
           </div>
         </div>
         <div class="step" data-sc="2" onclick="setStep(this)">
@@ -1064,7 +1074,7 @@ footer{
           <div class="snum">04</div>
           <div class="stext">
             <div class="step-title"><span lang-en>Receive your digital certificate</span><span lang-yo>Gba ìwé ẹ̀rí dígítà rẹ</span><span lang-ig>Nweta asambodo dijital gị</span><span lang-ha>Karɓi takaddun dijital ɗinka</span></div>
-            <div class="step-body"><span lang-en>Your NAICOM-valid certificate arrives instantly as a QR code. Show it on your phone screen at any FRSC checkpoint — it's recognised in the national verification system. Save it to your home screen. Share it with a fleet manager. From this moment on, FraudShield is running silently in the background on every claim.</span><span lang-yo>Ìwé ẹ̀rí tó wulo fún NAICOM rẹ dé lẹ́sẹ̀kẹsẹ gẹ́gẹ́ bi QR code. Fi hàn lórí àwòrán fóònu rẹ ní àyẹ̀wò FRSC kankan — a mọ̀ ọ nínú ètò ìfọwọ́sí orílẹ̀-èdè. Pa á mọ sí ìbẹ̀rẹ̀ fóònu. Pin pẹ̀lú olùmójú ọ̀pọ̀ ọkọ. Láti ìsẹ́jú yìí lọ, FraudShield ń ṣiṣẹ ní àfọmọ ní ìpele ìbẹ̀rẹ̀ lórí gbogbo ìkórè.</span><span lang-ig>Asambodo NAICOM-ezi gị na-abịa ozugbo dị ka QR code. Gosipụta ya na ihuenyo ekwentị gị n'ebe nlele FRSC ọ bụla — a na-amata ya na usoro nyocha mba. Chekwaa ya na ihuenyo ụlọ gị. Kesaa ya na onye njikwa otu ụgbọ ala. Site n'oge a, FraudShield na-arụ ọrụ n'ụzọ jụụ n'ọkwa azụ na mkpesa ọ bụla.</span><span lang-ha>Takardar shaidar NAICOM ɗinka tana zuwa nan take a matsayin QR code. Nuna ta a allon wayar ka a duk daki-daki na FRSC — ana san ta a tsarin tabbatarwa na ƙasa. Ajiye ta a allon gida. Raba ta da manajan taron motoci. Daga wannan lokaci, FraudShield yana gudana cikin natsuwa a bayan fage a kan kowane iƙirari.</span></div>
+            <div class="step-body"><span lang-en>Your digital certificate arrives instantly as a QR code on your phone. No paper, no sticker. Save it to your home screen, share it with a fleet manager. From this moment on, FraudShield runs silently on every claim.</span><span lang-yo>Ìwé ẹ̀rí dígítà rẹ dé lẹ́sẹ̀kẹsẹ gẹ́gẹ́ bi QR code lórí fóònu rẹ. Kò sí ìwé, kò sí sticker. Pa á mọ sí ìbẹ̀rẹ̀ fóònu rẹ, pin pẹ̀lú olùmójú ọ̀pọ̀ ọkọ. Láti ìsẹ́jú yìí lọ, FraudShield ń ṣiṣẹ ní àfọmọ lórí gbogbo ìkórè.</span><span lang-ig>Asambodo dijital gị na-abịa ozugbo dị ka QR code n'ekwentị gị. Ọ dịghị akwụkwọ, ọ dịghị sticker. Chekwaa ya na ihuenyo ụlọ gị, kesaa ya na onye njikwa otu ụgbọ ala. Site n'oge a, FraudShield na-arụ ọrụ n'ụzọ jụụ na mkpesa ọ bụla.</span><span lang-ha>Takardar shaidar dijital ɗinka tana zuwa nan take a matsayin QR code a wayar ka. Babu takarda, babu sticker. Ajiye ta a allon gida, raba ta da manajan taron motoci. Daga wannan lokaci, FraudShield yana gudana cikin natsuwa a kan kowane iƙirari.</span></div>
           </div>
         </div>
       </div>
@@ -1083,7 +1093,7 @@ footer{
             <div class="field"><div class="field-label"><span lang-en>Phone</span><span lang-yo>Fóònu</span><span lang-ig>Ekwentị</span><span lang-ha>Waya</span></div><div class="field-val done">+234 802 ••• ••••</div></div>
             <div class="verified-row">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <span><span lang-en>Identity confirmed via NIBSS</span><span lang-yo>Ìdánimọ̀ jẹ́rìí nipasẹ NIBSS</span><span lang-ig>E kwenyere nnabata site na NIBSS</span><span lang-ha>An tabbatar da shayarwa ta NIBSS</span></span>
+              <span><span lang-en>Identity verified</span><span lang-yo>Ìdánimọ̀ fọwọ́sí</span><span lang-ig>E kwenyere nnabata</span><span lang-ha>An tabbatar da shayarwa</span></span>
             </div>
             <button class="sc-btn" onclick="setStepIdx(1)"><span lang-en>Continue →</span><span lang-yo>Tẹ̀síwájú →</span><span lang-ig>Gaa n'ihu →</span><span lang-ha>Ci gaba →</span></button>
           </div>
@@ -1097,7 +1107,7 @@ footer{
             <div class="field"><div class="field-label"><span lang-en>Registered owner</span><span lang-yo>Onírú tí a forúkọ sílẹ̀</span><span lang-ig>Onye nwe debanye aha</span><span lang-ha>Maigidanci da aka yi rajista</span></div><div class="field-val done">Adewale Ogundimu ✓</div></div>
             <div class="verified-row">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <span><span lang-en>Matched against FRSC database</span><span lang-yo>Tọ̀kasi pẹ̀lú FRSC</span><span lang-ig>Ejikọtara ya na FRSC</span><span lang-ha>Ya dace da bayanan FRSC</span></span>
+              <span><span lang-en>Vehicle details saved</span><span lang-yo>Data ọkọ tí a jẹ́rìí</span><span lang-ig>Achọpụtara data ụgbọ ala</span><span lang-ha>An tabbatar da bayanan motarka</span></span>
             </div>
             <button class="sc-btn" onclick="setStepIdx(2)"><span lang-en>Get quote →</span><span lang-yo>Gba iṣiro →</span><span lang-ig>Nweta ngụta →</span><span lang-ha>Sami farashin →</span></button>
           </div>
@@ -1130,7 +1140,7 @@ footer{
                 <svg viewBox="0 0 24 24" fill="none" stroke="#1A7A3C" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
               </div>
               <div class="issued-title"><span lang-en>Policy issued!</span><span lang-yo>Ìwé àṣẹ ti wà!</span><span lang-ig>Ewepụtara iwu!</span><span lang-ha>An bayar da manufa!</span></div>
-              <div class="issued-sub"><span lang-en>NAICOM registered · FraudShield active</span><span lang-yo>NAICOM forúkọ sílẹ̀ · FraudShield ń ṣiṣẹ</span><span lang-ig>NAICOM debanye aha · FraudShield na arụ ọrụ</span><span lang-ha>NAICOM ta yi rajista · FraudShield yana aiki</span></div>
+              <div class="issued-sub"><span lang-en>Policy issued · FraudShield active</span><span lang-yo>Ìwé àṣẹ ti wà · FraudShield ń ṣiṣẹ</span><span lang-ig>Ewepụtara iwu · FraudShield na arụ ọrụ</span><span lang-ha>An bayar da manufa · FraudShield yana aiki</span></div>
             </div>
             <div class="cert-row"><span class="cert-k">Ref</span><span class="cert-v" style="font-family:var(--fm);font-size:.72rem">CS-2026-00847</span></div>
             <div class="cert-row"><span class="cert-k"><span lang-en>Vehicle</span><span lang-yo>Ọkọ</span><span lang-ig>Ụgbọ ala</span><span lang-ha>Motarka</span></span><span class="cert-v">LGS-247-EA</span></div>
@@ -1153,8 +1163,8 @@ footer{
                 <rect x="29" y="33" width="3" height="3" fill="#1A7A3C"/>
               </svg>
               <div>
-                <div class="qr-t"><span lang-en>Show at any FRSC checkpoint</span><span lang-yo>Ṣàfihàn ní àyẹ̀wò FRSC kankan</span><span lang-ig>Gosipụta n'ebe nlele FRSC ọ bụla</span><span lang-ha>Nuna a duk daki-daki na FRSC</span></div>
-                <div class="qr-s"><span lang-en>FRSC-verified · tap to share</span><span lang-yo>FRSC fọwọ́sí · tẹ lati pin</span><span lang-ig>FRSC kwenyere · kụọ ka ịkekọrịta</span><span lang-ha>FRSC ta tabbatar · taɓa don raba</span></div>
+                <div class="qr-t"><span lang-en>Your digital certificate</span><span lang-yo>Ìwé ẹ̀rí dígítà rẹ</span><span lang-ig>Asambodo dijital gị</span><span lang-ha>Takaddun dijital ɗinka</span></div>
+                <div class="qr-s"><span lang-en>Save to phone · tap to share</span><span lang-yo>Pa mọ fóònu · tẹ lati pin</span><span lang-ig>Chekwaa n'ekwentị · kụọ ka ịkekọrịta</span><span lang-ha>Ajiye a wayar · taɓa don raba</span></div>
               </div>
             </div>
           </div>
@@ -1187,7 +1197,7 @@ footer{
             <div class="fp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg></div>
             <div>
               <div class="fp-title"><span lang-en>Ghost vehicle detection</span><span lang-yo>Ìmọ̀ ọkọ ẹ̀mí ìtànjẹ</span><span lang-ig>Ichopụta ụgbọ ala mmụọ</span><span lang-ha>Gano motocin fatalwa</span></div>
-              <div class="fp-text"><span lang-en>Every plate number is cross-checked against the FRSC and MVAA national registries before a policy is issued. A vehicle that doesn't exist in the official record cannot be insured through CoverShield.</span><span lang-yo>Gbogbo nọ́mbà àwo ni a ṣàyẹ̀wò pẹ̀lú àwọn àkójọpọ̀ data FRSC àti MVAA ṣáájú kí a tó fun ni ìwé àṣẹ. Ọkọ tí kò sí nínú àkọsílẹ̀ ìjọba kò lè ní ẹ̀dá aabo nipasẹ CoverShield.</span><span lang-ig>A na-enyocha nọmba efere ọ bụla megide ndepụta mba FRSC na MVAA tupu a ewepụta iwu. Ụgbọ ala na-adịghị adi na ndekọ ọchụchọ enweghị ike inweta mkpado site na CoverShield.</span><span lang-ha>Ana duba kowane lambar farantin da bayanan ƙasa na FRSC da MVAA kafin bayar da manufa. Motoci da ba ta wanzu a cikin rijistar hukuma ba za ta iya samun insho ta CoverShield ba.</span></div>
+              <div class="fp-text"><span lang-en>In the live product, every plate will be cross-checked against vehicle registration data. A vehicle that does not exist in the official record cannot be insured.</span><span lang-yo>Gbogbo nọ́mbà àwo ni a ṣàyẹ̀wò lòdì sí data ìforúkọsílẹ̀ ọkọ orílẹ̀-èdè ṣáájú kí a tó fun ni ìwé àṣẹ. Ọkọ tí kò sí nínú àkọsílẹ̀ ìjọba kò lè gba ìlànà nipasẹ CoverShield.</span><span lang-ig>A na-enyocha nọmba efere ọ bụla megide data ndebanye aha ụgbọ ala mba tupu a ewepụta iwu. Ụgbọ ala na-adịghị adi na ndekọ ọchụchọ enweghị ike inweta iwu site na CoverShield.</span><span lang-ha>Ana duba kowane lambar farantin da bayanan rajistan motoci na ƙasa kafin bayar da manufa. Motoci da ba ta wanzu a cikin rijistar hukuma ba za ta iya samun manufa ta CoverShield ba.</span></div>
             </div>
           </div>
           <div class="fp">
@@ -1234,7 +1244,7 @@ footer{
             <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
           </div>
           <div>
-            <div class="arch-name" style="color:rgba(255,255,255,.4)">NIBSS · FRSC · MVAA</div>
+            <div class="arch-name" style="color:rgba(255,255,255,.4)">National registries (planned)</div>
             <div class="arch-desc"><span lang-en>Official national identity and vehicle registries</span><span lang-yo>Àwọn àkójọpọ̀ data ìdánimọ̀ àti ọkọ ti orílẹ̀-èdè</span><span lang-ig>Ndepụta nnabata na ụgbọ ala ọchụchọ mba</span><span lang-ha>Hukumomin shayarwa da rajistan motoci na ƙasa</span></div>
           </div>
           <span class="arch-tag tag-infra"><span lang-en>Infrastructure</span><span lang-yo>Àwọn ohun-èlò</span><span lang-ig>Ihe ndabere</span><span lang-ha>Ababen more</span></span>
@@ -1258,12 +1268,12 @@ footer{
       <div class="wcard">
         <div class="wcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <div class="wcard-title"><span lang-en>Real cover, not a sticker</span><span lang-yo>Aabo gidi, kì í ṣe sticker</span><span lang-ig>Nchedo n'ezigbo, ọ bụghị sticker</span><span lang-ha>Kariya ta gaske, ba sticker ba</span></div>
-        <div class="wcard-text"><span lang-en>Every policy is NAICOM-registered and backed by a licensed Nigerian insurer. Your QR certificate is verifiable in real time by any FRSC officer anywhere in Nigeria. No one can fake it.</span><span lang-yo>Gbogbo ìwé àṣẹ ni a forúkọ sílẹ̀ pẹ̀lú NAICOM àti tí ẹlẹ́dáaabo Nàìjíríà tó ní ìwé àṣẹ ṣìnilọ́wọ́. Ìwé ẹ̀rí QR rẹ le jẹ́rìí rẹ̀ ní àkókò gidi nípasẹ̀ olóṣiṣẹ́ FRSC kankan níbíkíbí ní Nàìjíríà. Kò sí ẹni tó lè ṣe àgabàgebè rẹ̀.</span><span lang-ig>A na-eme ka iwu ọ bụla debanye aha NAICOM ma ndị mkpado Naịjirịa a kwadoro na-akwado ya. Asambodo QR gị nwere ike inyochaha n'oge ozugbo site n'onye ọrụ FRSC ọ bụla ebe ọ bụla n'Naịjirịa. Onye ọ bụla enweghị ike idizi ya.</span><span lang-ha>Ana yin rajistarta da NAICOM kowane manufa kuma mai insho mai lasisi na Najeriya ya biya shi. Ana iya tabbatar da takardar shaidar QR ɗinka a lokacin gaske ta ma'aikacin FRSC kowane a ko ina a Najeriya. Babu wanda zai iya jarraba ta.</span></div>
+        <div class="wcard-text"><span lang-en>Every policy will be backed by a licensed Nigerian underwriter. Your digital certificate is verifiable — no one can fake it. We're building toward NAICOM registration as a core part of our regulatory roadmap.</span><span lang-yo>Gbogbo ìlànà yóò ní ẹlẹ́dáaabo Nàìjíríà tó ní ìwé àṣẹ ṣìnilọ́wọ́. Ìwé ẹ̀rí dígítà rẹ le jẹ́rìí rẹ̀ — kò sí ẹni tó lè ṣe àgabàgebè rẹ̀. A ń kọ́ ọ̀nà sí ìforúkọsílẹ̀ NAICOM gẹ́gẹ́ bi ara ọ̀nà ìlànà ìṣẹ̀dálẹ̀ wa.</span><span lang-ig>Iwu ọ bụla ga-enwe onye mkpado Naịjirịa a kwadoro na-akwado ya. Asambodo dijital gị nwere ike inyochaha — onye ọ bụla enweghị ike idizi ya. Anyị na-ewu ọ̀nà gaa ndebanye aha NAICOM dị ka akụkụ isi nke amụma iwu anyị.</span><span lang-ha>Kowane manufa za a biya ta da mai insho mai lasisi na Najeriya. Ana iya tabbatar da takardar shaidar dijital ɗinka — babu wanda zai iya jarraba ta. Muna gina hanyar zuwa rajistawa ta NAICOM a matsayin muhimmin ɓangare na shirye-shiryen tsari ɗinmu.</span></div>
       </div>
       <div class="wcard">
         <div class="wcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <div class="wcard-title"><span lang-en>14-day payout target</span><span lang-yo>Àfojúsùn ìsanwó ọjọ 14</span><span lang-ig>Ebumnuche ịkwụ ụgwọ ụbọchị 14</span><span lang-ha>Manufar biyan kwana 14</span></div>
-        <div class="wcard-text"><span lang-en>NIIRA 2025 gives insurers 60 days to pay claims. We publish a 14-day target and track our performance publicly every quarter. Fast payment is the only thing that separates real insurance from a promise. FraudShield's AI verification is what makes it possible.</span><span lang-yo>NIIRA 2025 fún àwọn ẹlẹ́dáaabo ní ọjọ 60 láti san àwọn ìkórè. A tẹ̀jáde àfojúsùn ọjọ 14 àti ṣàgbékalẹ̀ àṣeyọrí wa ní gbangba lóhun mẹ́rin lọ́dọọdún. Sísanwó yára ni ohun tó yà ẹ̀dá aabo gidi kúrò nínú ìlérí.</span><span lang-ig>NIIRA 2025 na-enye ndị mkpado ụbọchị 60 iji kwụọ mkpesa. Anyị na-ebipụta ebumnuche ụbọchị 14 ma na-eso omume anyị n'ihu ọha kwa ọnwa atọ. Ịkwụ ụgwọ ngwa ngwa bụ naanị ihe na-ekewapụ mkpado n'ezigbo site n'nkwa.</span><span lang-ha>NIIRA 2025 tana ba masu insho kwana 60 don biya iƙirari. Muna buga manufar kwana 14 kuma muna bin diddigin ayyukanmu a fili kowane kwata. Biyan kuɗi da sauri shine kawai abin da ke raba insho na gaske daga alkawari.</span></div>
+        <div class="wcard-text"><span lang-en>Most Nigerian insurers take 90–180 days to pay. We are building toward a 14-day target and will publish our payout performance data once we go live. Fast payment is the only thing that separates real insurance from a promise.</span><span lang-yo>NIIRA 2025 fún àwọn ẹlẹ́dáaabo ní ọjọ 60 láti san àwọn ìkórè. A tẹ̀jáde àfojúsùn ọjọ 14 àti ṣàgbékalẹ̀ àṣeyọrí wa ní gbangba lóhun mẹ́rin lọ́dọọdún. Sísanwó yára ni ohun tó yà ẹ̀dá aabo gidi kúrò nínú ìlérí.</span><span lang-ig>NIIRA 2025 na-enye ndị mkpado ụbọchị 60 iji kwụọ mkpesa. Anyị na-ebipụta ebumnuche ụbọchị 14 ma na-eso omume anyị n'ihu ọha kwa ọnwa atọ. Ịkwụ ụgwọ ngwa ngwa bụ naanị ihe na-ekewapụ mkpado n'ezigbo site n'nkwa.</span><span lang-ha>NIIRA 2025 tana ba masu insho kwana 60 don biya iƙirari. Muna buga manufar kwana 14 kuma muna bin diddigin ayyukanmu a fili kowane kwata. Biyan kuɗi da sauri shine kawai abin da ke raba insho na gaske daga alkawari.</span></div>
       </div>
       <div class="wcard">
         <div class="wcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
@@ -1273,7 +1283,7 @@ footer{
       <div class="wcard">
         <div class="wcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <div class="wcard-title"><span lang-en>Digital everywhere, including checkpoints</span><span lang-yo>Dígítà níbíkíbí, pẹ̀lú àwọn àyẹ̀wò</span><span lang-ig>Dijital ebe niile, gụnyere ebe nlele</span><span lang-ha>Dijital ko'ina, ciki har da daki-daki</span></div>
-        <div class="wcard-text"><span lang-en>Your QR certificate lives on your phone. Show it on screen — no paper, no sticker, no laminate. It's linked to CoverShield's verification portal, which FRSC officers can check from their own device. Valid nationwide from the moment it's issued.</span><span lang-yo>Ìwé ẹ̀rí QR rẹ gbé lórí fóònu rẹ. Fi hàn lórí àwòrán — kò sí ìwé, kò sí sticker, kò sí àmúkọ. Ó sopọ pẹ̀lú ẹ̀bùn ìfọwọ́sí CoverShield, èyí tí àwọn olóṣiṣẹ́ FRSC le ṣàyẹ̀wò lórí ẹ̀rọ tiwọn. Wulo ní gbogbo orílẹ̀-èdè láti ìsẹ́jú tí a fún un ni.</span><span lang-ig>Asambodo QR gị bi n'ekwentị gị. Gosipụta ya na ihuenyo — ọ dịghị akwụkwọ, ọ dịghị sticker, ọ dịghị ihe mkpuchi. Ọ jikọtara na ọdụ nnyocha CoverShield, nke ndị ọrụ FRSC nwere ike inyocha site na ngwaọrụ ha. Bara uru n'ebe niile n'obodo site n'oge ewepụtara ya.</span><span lang-ha>Takardar shaidar QR ɗinka tana rayuwa a wayar ka. Nuna ta a allon — babu takarda, babu sticker, babu laminate. An haɗa ta da tashar tabbatarwa ta CoverShield, wanda ma'aikatan FRSC zasu iya duba daga na'urarsu. Tana aiki a fadin ƙasa daga lokacin da aka bayar da ita.</span></div>
+        <div class="wcard-text"><span lang-en>Your certificate lives on your phone as a QR code — no paper, no sticker. Save it, share it, carry it everywhere. No laminate, no branch visit, no chasing physical documents.</span><span lang-yo>Ìwé ẹ̀rí dígítà rẹ gbé lórí fóònu rẹ gẹ́gẹ́ bi QR code. Kò sí ìwé, kò sí sticker. Pin pẹ̀lú ẹnikẹ́ni tó nílò rí rẹ̀. Bí a ṣe ń kọ́ sí ìṣọpọ ìlànà pípé, èyí ni ìdàsí tí yóò ṣiṣẹ ní àwọn àyẹ̀wò.</span><span lang-ig>Asambodo dijital gị bi n'ekwentị gị dị ka QR code. Ọ dịghị akwụkwọ, ọ dịghị sticker. Kesaa ya na onye ọ bụla chọrọ ịhụ ya. Ka anyị na-ewu gaa nkwekọrịta iwu zuru oke, nke a bụ usoro ga-arụ ọrụ n'ebe nlele.</span><span lang-ha>Takardar shaidar dijital ɗinka tana rayuwa a wayar ka a matsayin QR code. Babu takarda, babu sticker. Raba ta da duk wanda ke buƙatar ganin ta. Yayin da muke gina zuwa cikakken haɗin tsari, wannan shine tsarin da zai yi aiki a daki-daki.</span></div>
       </div>
       <div class="wcard">
         <div class="wcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
@@ -1300,7 +1310,7 @@ footer{
       <span lang-ha>Kasance na farko a kan hanya<br/>tare da CoverShield.</span>
     </h2>
     <p class="slead">
-      <span lang-en>We're onboarding our first 100 Lagos vehicle owners. Early access is free — full product, real policy, real certificate — in exchange for your feedback. No credit card. No commitment.</span>
+      <span lang-en>We're looking for Lagos vehicle owners to help us test and shape CoverShield before we go live. Sign up and we'll reach out directly. No credit card, no commitment.</span>
       <span lang-yo>A n gbà àwọn onírú ọkọ Lagos àkọ́kọ́ 100. Ìráàwọ àkọ́kọ́ jẹ́ ọfẹ́ — ọjà pípé, ìwé àṣẹ gidi, ìwé ẹ̀rí gidi — ní pàṣípàárọ̀ fún èrò rẹ. Ko kaadi kirẹditi. Ko ìdúpọ̀.</span>
       <span lang-ig>Anyị na-anabata ndị nwe ụgbọ ala Lagos 100 nke mbụ. Ohere mbụ bụ n'efu — ngwaahịa zuru oke, iwu n'ezigbo, asambodo n'ezigbo — n'ụgwọ maka nzaghachi gị. Ọ dịghị kaadị kredit. Ọ dịghị nkwenye.</span>
       <span lang-ha>Muna karɓar farkon masu motoci 100 na Lagos. Farkon shiga kyauta ne — cikakken samfuri, manufar gaske, takaddun gaske — don ra'ayinka. Babu katin kuɗi. Babu alkawari.</span>
@@ -1320,13 +1330,13 @@ footer{
       <span lang-ig>Ị nọ na ndepụta. Chere ka anyị kpọtụrụ gị n'ime awa 48.</span>
       <span lang-ha>Kana cikin jerin. Tsammani jin sauti daga wurinmu cikin awanni 48.</span>
     </div>
-    <p class="wl-note"><span lang-en>First 100 Lagos vehicle owners get free access for 30 days — a real policy, not a demo.</span><span lang-yo>Àkọ́kọ́ 100 onírú ọkọ Lagos ni ìráàwọ ọfẹ́ fún ọjọ 30 — ìwé àṣẹ gidi, kì í ṣe àpẹẹrẹ.</span><span lang-ig>Ndị nwe ụgbọ ala Lagos 100 nke mbụ nwere ohere n'efu maka ụbọchị 30 — iwu n'ezigbo, ọ bụghị ngosipụta.</span><span lang-ha>Farkon masu motoci 100 na Lagos suna samun damar kyauta na kwana 30 — manufar gaske, ba demo ba.</span></p>
+    <p class="wl-note"><span lang-en>First 100 signups get early access and a direct say in what we build.</span><span lang-yo>Àkọ́kọ́ 100 onírú ọkọ Lagos ni ìráàwọ ọfẹ́ fún ọjọ 30 — ìwé àṣẹ gidi, kì í ṣe àpẹẹrẹ.</span><span lang-ig>Ndị nwe ụgbọ ala Lagos 100 nke mbụ nwere ohere n'efu maka ụbọchị 30 — iwu n'ezigbo, ọ bụghị ngosipụta.</span><span lang-ha>Farkon masu motoci 100 na Lagos suna samun damar kyauta na kwana 30 — manufar gaske, ba demo ba.</span></p>
     <div class="trust-row">
-      <span class="tbadge">NIIRA 2025</span>
-      <span class="tbadge">NAICOM</span>
-      <span class="tbadge">BVN/NIN</span>
+      <span class="tbadge">Prototype</span>
       <span class="tbadge">NDPA 2023</span>
-      <span class="tbadge">FRSC Verified</span>
+      <span class="tbadge">BVN/NIN</span>
+      <span class="tbadge">AI Verified</span>
+      <span class="tbadge">Pre-Launch</span>
     </div>
   </div>
 </section>
@@ -1363,7 +1373,7 @@ footer{
       <ul>
         <li><a href="#"><span lang-en>Privacy Policy</span><span lang-yo>Ìlànà Àṣírí</span><span lang-ig>Iwu Nzuzo</span><span lang-ha>Manufar Sirri</span></a></li>
         <li><a href="#"><span lang-en>Terms</span><span lang-yo>Àwọn Ọ̀rọ̀</span><span lang-ig>Usoro</span><span lang-ha>Sharuɗɗa</span></a></li>
-        <li><a href="#"><span lang-en>NAICOM Reg</span><span lang-yo>Ìforúkọsílẹ̀ NAICOM</span><span lang-ig>Ndebanye aha NAICOM</span><span lang-ha>Rajista NAICOM</span></a></li>
+        <li><a href="#"><span lang-en>Regulatory Roadmap</span><span lang-yo>Ọ̀nà Ìlànà</span><span lang-ig>Amụma Iwu</span><span lang-ha>Tsarin Doka</span></a></li>
       </ul>
     </div>
   </div>
@@ -1390,10 +1400,10 @@ let curLang = 'en';
 function applyLang(lang) {
   curLang = lang;
   document.querySelectorAll('[lang-en],[lang-yo],[lang-ig],[lang-ha]').forEach(el => {
-    const match = el.hasAttribute('lang-' + lang);
-    el.style.display = match ? '' : 'none';
+    el.style.display = el.hasAttribute('lang-' + lang) ? 'inline' : 'none';
   });
-  document.getElementById('ml').textContent = lang.toUpperCase();
+  const ml = document.getElementById('ml');
+  if (ml) ml.textContent = lang.toUpperCase();
   track('lang_' + lang);
 }
 
@@ -1404,9 +1414,7 @@ document.querySelectorAll('.lb').forEach(b => {
     applyLang(b.dataset.lang);
   });
 });
-
-// init
-applyLang('en');
+// CSS already shows English by default — no JS init needed
 
 // ── Nav scroll ───────────────────────────────────────────────
 window.addEventListener('scroll', () =>
