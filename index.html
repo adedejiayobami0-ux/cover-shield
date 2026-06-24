@@ -78,7 +78,7 @@ nav{
   font-size:.7rem;font-weight:700;letter-spacing:.5px;
   color:var(--gray);transition:all .18s;
 }
-.lb.on{background:var(--forest);color:var(--white)}
+.lb.on{background:var(--green);color:var(--bg)}
 .lb:hover:not(.on){color:var(--ink)}
 
 .nav-cta{
@@ -543,7 +543,7 @@ section{padding:96px 48px}
   position:relative;z-index:1;
 }
 .fraud-section .eyebrow{color:var(--lime)}
-.fraud-section .stitle{color:var(--white)}
+.fraud-section .stitle{color:var(--t1)}
 .fraud-section .slead{color:rgba(255,255,255,.55);max-width:460px}
 .fraud-points{margin-top:36px;display:flex;flex-direction:column;gap:24px}
 .fp{display:flex;gap:16px}
@@ -555,7 +555,7 @@ section{padding:96px 48px}
   display:flex;align-items:center;justify-content:center;
 }
 .fp-icon svg{width:18px;height:18px;color:var(--lime)}
-.fp-title{font-weight:700;font-size:.9rem;color:var(--white);margin-bottom:4px}
+.fp-title{font-weight:700;font-size:.9rem;color:var(--t1);margin-bottom:4px}
 .fp-text{font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.7}
 
 /* architecture card */
@@ -579,7 +579,7 @@ section{padding:96px 48px}
   display:flex;align-items:center;justify-content:center;
 }
 .arch-icon svg{width:16px;height:16px}
-.arch-name{font-size:.875rem;font-weight:600;color:var(--white);margin-bottom:2px}
+.arch-name{font-size:.875rem;font-weight:600;color:var(--t1);margin-bottom:2px}
 .arch-desc{font-size:.72rem;color:rgba(255,255,255,.4)}
 .arch-tag{
   margin-left:auto;flex-shrink:0;
@@ -619,7 +619,7 @@ section{padding:96px 48px}
   text-align:center;padding:100px 48px;
 }
 .waitlist .eyebrow{color:var(--lime)}
-.waitlist .stitle{color:var(--white);margin:0 auto 16px}
+.waitlist .stitle{color:var(--t1);margin:0 auto 16px}
 .waitlist .slead{margin:0 auto 48px;color:rgba(255,255,255,.55)}
 .wl-form{
   display:flex;gap:10px;justify-content:center;
@@ -696,6 +696,8 @@ footer{
 /* ─── language display ──────────────────────────────────────── */
 [lang-yo],[lang-ig],[lang-ha]{display:none}
 [lang-en]{display:inline}
+/* CRITICAL: spans must inherit colour from their container, not override it */
+[lang-en],[lang-yo],[lang-ig],[lang-ha]{color:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;line-height:inherit}
 
 /* ─── responsive ─────────────────────────────────────────────── */
 @media(max-width:900px){
@@ -714,6 +716,172 @@ footer{
   .footer-grid{grid-template-columns:1fr 1fr}
   .wl-form{flex-direction:column}
 }
+
+/* ─── theme system ──────────────────────────────────────────── */
+[data-theme="light"]{
+  --bg:       #F5F5F2;
+  --bg2:      #ECEAE5;
+  --surface:  #FFFFFF;
+  --surface2: #F0EEE9;
+  --border:   rgba(0,0,0,.09);
+  --border2:  rgba(0,0,0,.15);
+  --t1:       rgba(10,15,10,.92);
+  --t2:       rgba(10,15,10,.58);
+  --t3:       rgba(10,15,10,.35);
+  --green-soft:rgba(0,180,80,.1);
+  --green-glow:rgba(0,180,80,.25);
+}
+[data-theme="light"] .proto{background:linear-gradient(90deg,rgba(0,180,80,.07),transparent 60%)}
+[data-theme="light"] .pcard,[data-theme="light"] .hcard{box-shadow:0 12px 48px rgba(0,0,0,.12)}
+[data-theme="light"] .pc-head{background:linear-gradient(135deg,#0E2718,#0A1A10)}
+[data-theme="light"] .pc-veh,[data-theme="light"] .pc-label{color:rgba(255,255,255,.55)!important}
+[data-theme="light"] .hero::after{opacity:.4}
+[data-theme="light"] .band{background:#E8E5DF}
+[data-theme="light"] .stat-num{color:var(--t1)}
+[data-theme="light"] .stat-label,[data-theme="light"] .stat-src{color:var(--t2)}
+[data-theme="light"] .s3,[data-theme="light"] .cv,[data-theme="light"] .wc{background:var(--white,#fff);border-color:rgba(0,0,0,.1)}
+[data-theme="light"] .cv.feat{background:linear-gradient(180deg,rgba(0,180,80,.06),#fff 40%)}
+[data-theme="light"] .arch{background:rgba(0,0,0,.03)}
+[data-theme="light"] .arch-r:hover{background:rgba(0,0,0,.03)}
+[data-theme="light"] .fraud{background:linear-gradient(180deg,#E8E5DF,#ECEAE5)}
+[data-theme="light"] .fraud::before{background:radial-gradient(circle,rgba(0,180,80,.05),transparent 70%)}
+[data-theme="light"] .phone{background:#FFFFFF;border-color:rgba(0,0,0,.12)}
+[data-theme="light"] .phone-top{background:#F0EEE9}
+[data-theme="light"] .notch{background:#F5F5F2}
+[data-theme="light"] .fld-v{background:#F0EEE9;border-color:rgba(0,0,0,.12);color:var(--t1)}
+[data-theme="light"] .fld-v.ok{background:rgba(0,180,80,.06);border-color:rgba(0,180,80,.3);color:#007A38}
+[data-theme="light"] .sc-t{color:var(--t1)}
+[data-theme="light"] .sc-s{color:var(--t2)}
+[data-theme="light"] .tier{border-color:rgba(0,0,0,.12)}
+[data-theme="light"] .tier.sel{background:rgba(0,180,80,.06)}
+[data-theme="light"] .crow{background:#F0EEE9}
+[data-theme="light"] .ck{color:var(--t3)}
+[data-theme="light"] .cval{color:var(--t1)}
+[data-theme="light"] .wl{background:radial-gradient(ellipse 60% 80% at 50% 110%,rgba(0,180,80,.08),transparent 60%),#ECEAE5}
+[data-theme="light"] .wl-in{background:#fff;border-color:rgba(0,0,0,.15);color:var(--t1)}
+[data-theme="light"] .wl-in::placeholder{color:var(--t3)}
+[data-theme="light"] .tb{background:#fff;border-color:rgba(0,0,0,.12);color:var(--t2)}
+[data-theme="light"] footer{background:#E0DDD7;border-top-color:rgba(0,0,0,.1)}
+[data-theme="light"] .f-bot{border-top-color:rgba(0,0,0,.1)}
+[data-theme="light"] #sticky-cta{box-shadow:0 8px 32px rgba(0,180,80,.3),0 4px 16px rgba(0,0,0,.15)}
+[data-theme="light"] .hc-bundle{background:rgba(180,130,0,.1);border-color:rgba(180,130,0,.2);color:#7A5800}
+[data-theme="light"] .at-b{background:rgba(180,130,0,.1);color:#7A5800;border-color:rgba(180,130,0,.18)}
+[data-theme="light"] .logo{color:var(--t1)}
+[data-theme="light"] .logo span{color:var(--green,#00A850)}
+[data-theme="light"] nav{background:rgba(245,245,242,.88)}
+[data-theme="light"] .langs{background:#ECEAE5;border-color:rgba(0,0,0,.12)}
+[data-theme="light"] .lb{color:var(--t3)}
+[data-theme="light"] .proto{border-bottom-color:rgba(0,0,0,.08)}
+[data-theme="light"] .hcard{background:#fff;border-color:rgba(0,0,0,.1)}
+[data-theme="light"] .hc-top{background:linear-gradient(135deg,rgba(0,180,80,.06),transparent)}
+[data-theme="light"] .hc-row{border-color:rgba(0,0,0,.07)}
+[data-theme="light"] .hc-k{color:var(--t3)}
+[data-theme="light"] .hc-v{color:var(--t1)}
+[data-theme="light"] .pg-card{background:#fff}
+[data-theme="light"] .pg-num{color:#DDDAD4}
+[data-theme="light"] .pg-title{color:var(--t1)}
+[data-theme="light"] .pg-text{color:var(--t2)}
+
+
+/* pc-head always dark — keep text white in both modes */
+.pc-head .pc-plate,.pc-head .pc-veh,.pc-head .pc-row1 .pc-label,.pc-head .pc-row1 .pc-live{
+  color:rgba(255,255,255,.9)!important;
+}
+.pc-head .pc-live{color:var(--green)!important}
+.pc-head .pc-veh{color:rgba(255,255,255,.55)!important}
+/* health card inner always dark bg */
+.hc-inner-dark{color:var(--white)!important}
+/* theme toggle button */
+#theme-btn{
+  width:36px;height:36px;border-radius:8px;
+  background:var(--surface);border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .2s;flex-shrink:0;
+}
+#theme-btn:hover{border-color:var(--green);background:var(--green-soft)}
+#theme-btn svg{width:17px;height:17px;color:var(--t1)}
+#theme-btn .icon-sun{display:none}
+#theme-btn .icon-moon{display:block}
+[data-theme="light"] #theme-btn .icon-sun{display:block}
+[data-theme="light"] #theme-btn .icon-moon{display:none}
+
+
+/* ── light mode dark-section overrides ── */
+[data-theme="light"] #broker,
+[data-theme="light"] #health,
+[data-theme="light"] section[style*="background:var(--bg2)"],
+[data-theme="light"] section[style*="background:var(--off-black)"],
+[data-theme="light"] .health {
+  background: var(--bg2) !important;
+}
+[data-theme="light"] .fraud {
+  background: linear-gradient(180deg, #E8E5DF, #ECEAE5) !important;
+}
+
+/* make sure s3-text visible in light */
+[data-theme="light"] .s3-text,
+[data-theme="light"] .s3-title,
+[data-theme="light"] .cv-desc,
+[data-theme="light"] .cv-title,
+[data-theme="light"] .wc-s,
+[data-theme="light"] .wc-t,
+[data-theme="light"] .perk-s,
+[data-theme="light"] .perk-t,
+[data-theme="light"] .h-points .hp,
+[data-theme="light"] .fp-s,
+[data-theme="light"] .dstep-body,
+[data-theme="light"] .dstep-title,
+[data-theme="light"] .slead,
+[data-theme="light"] .stat-label,
+[data-theme="light"] .stat-src {
+  color: var(--t2) !important;
+}
+[data-theme="light"] .stitle,
+[data-theme="light"] .s3-title.on,
+[data-theme="light"] .dstep.on .dstep-title,
+[data-theme="light"] .fp-t,
+[data-theme="light"] .arch-n,
+[data-theme="light"] .cv-title,
+[data-theme="light"] .wc-t,
+[data-theme="light"] .perk-t {
+  color: var(--t1) !important;
+}
+[data-theme="light"] .hero-lead { color: var(--t2) !important; }
+[data-theme="light"] .hero h1   { color: var(--t1) !important; }
+[data-theme="light"] .hero h1 em { color: var(--green) !important; }
+[data-theme="light"] .chip      { color: var(--green) !important; }
+
+/* nav text in light */
+[data-theme="light"] .logo { color: var(--t1) !important; }
+[data-theme="light"] .nav-links a { color: var(--t2) !important; }
+[data-theme="light"] .nav-links a:hover { color: var(--t1) !important; }
+[data-theme="light"] .proto-text { color: var(--t2) !important; }
+[data-theme="light"] .proto a { color: var(--green) !important; }
+
+/* footer */
+[data-theme="light"] .f-brand-p { color: var(--t2) !important; }
+[data-theme="light"] .f-col a { color: var(--t2) !important; }
+[data-theme="light"] .f-bot p { color: var(--t2) !important; }
+[data-theme="light"] .f-h { color: var(--t3) !important; }
+
+/* eyebrow stays green */
+[data-theme="light"] .eyebrow { color: var(--green) !important; }
+[data-theme="light"] .eyebrow::before { background: var(--green) !important; }
+
+/* waitlist */
+[data-theme="light"] .wl .stitle { color: var(--t1) !important; }
+[data-theme="light"] .wl .slead  { color: var(--t2) !important; }
+[data-theme="light"] .wl-note    { color: var(--t3) !important; }
+[data-theme="light"] .wl-ok      { background: rgba(0,180,80,.08); border-color: rgba(0,180,80,.2); color: #007A38; }
+
+/* health section points */
+[data-theme="light"] .hp { color: var(--t2) !important; }
+[data-theme="light"] .hp b { color: var(--t1) !important; }
+
+/* fraud arch */
+[data-theme="light"] .arch-d { color: var(--t2) !important; }
+[data-theme="light"] .arch-h { color: var(--t3) !important; }
+
 </style>
 </head>
 <body>
@@ -722,7 +890,7 @@ footer{
 <div style="background:#0A2415;border-bottom:1px solid rgba(93,187,99,.2);padding:10px 48px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Outfit',system-ui,sans-serif;font-size:.8rem;position:relative;z-index:300">
   <div style="display:flex;align-items:center;gap:10px">
     <span style="background:rgba(93,187,99,.15);border:1px solid rgba(93,187,99,.3);color:#5DBB63;border-radius:100px;padding:2px 10px;font-weight:700;font-size:.68rem;letter-spacing:.8px;text-transform:uppercase">Prototype</span>
-    <span style="color:rgba(255,255,255,.5)">This is a preview of AfriSure Shield — not a live product. No real policies are being sold. <strong style="color:rgba(255,255,255,.75)">Sign up below to join the testing group.</strong></span>
+    <span style="color:var(--t2)">This is a preview of AfriSure Shield — not a live product. No real policies are being sold. <strong style="color:var(--t1)">Sign up below to join the testing group.</strong></span>
   </div>
   <a href="#waitlist" style="color:#5DBB63;font-weight:600;white-space:nowrap;text-decoration:none">Join waitlist →</a>
 </div>
@@ -943,7 +1111,7 @@ footer{
 <!-- ─── COVERAGE ───────────────────────────────────────────────── -->
 <!-- ─── WHAT A BROKER DOES ───────────────────────────────────── -->
 <section id="broker" style="background:var(--off-black);padding:80px 48px" class="reveal"><span lang-yo>Bí AfriSure Shield ṣe ń ṣiṣẹ</span><span lang-ig>Otu AfriSure Shield si arụọ ọrụ</span><span lang-ha>Yadda AfriSure Shield yake aiki</span></div>
-    <h2 class="stitle" style="color:var(--white);margin-bottom:40px">
+    <h2 class="stitle" style="color:var(--t1);margin-bottom:40px">
       <span lang-en>We are your broker.<br/>Not the insurer's agent.</span>
       <span lang-yo>Àwa ni alagata rẹ.<br/>Kì í ṣe aṣojú ẹlẹ́dáaabo.</span>
       <span lang-ig>Anyị bụ nnọchiteanya gị.<br/>Ọ bụghị onye nnọchiteanya onye mkpado.</span>
@@ -953,10 +1121,10 @@ footer{
 
       <div style="background:rgba(255,255,255,.04);border-radius:14px 0 0 14px;padding:32px 28px">
         <div style="font-family:var(--fs);font-size:3rem;color:var(--green);opacity:.4;line-height:1;margin-bottom:14px">01</div>
-        <div style="font-weight:700;font-size:1rem;color:var(--white);margin-bottom:10px">
+        <div style="font-weight:700;font-size:1rem;color:var(--t1);margin-bottom:10px">
           <span lang-en>You tell us what you need</span><span lang-yo>O sọ fún wa ohun tí o nílò</span><span lang-ig>I gwa anyị ihe ị chọrọ</span><span lang-ha>Kana gaya mana abin da kuke bukata</span>
         </div>
-        <div style="font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.75">
+        <div style="font-size:.875rem;color:var(--t2);line-height:1.75">
           <span lang-en>Vehicle cover, health cover, or both. We ask you the right questions — your vehicle, your household size, your budget — so we can match you to the right policy rather than the most expensive one.</span>
           <span lang-yo>Aabo ọkọ, aabo ilera, tàbí méjèèjì. A béèrè àwọn ìbéèrè tó tọ́ lọ́wọ́ rẹ — ọkọ rẹ, ìwọ̀n ẹbí rẹ, ìwọ̀n ìnáwó rẹ — kí a lè bá ọ pàdé ìlànà tó tọ́.</span>
           <span lang-ig>Nchedo ụgbọ ala, nchedo ahụike, ma ọ bụ abụọ. Anyị jụọ gị ajụjụ ndị kwesịrị — ụgbọ ala gị, ọnụ ọgụgụ ezinụlọ gị, ego gị — ka anyị wee jikọọ gị na iwu kwesịrị.</span>
@@ -966,10 +1134,10 @@ footer{
 
       <div style="background:rgba(0,229,107,.06);border:1px solid rgba(0,229,107,.12);padding:32px 28px">
         <div style="font-family:var(--fs);font-size:3rem;color:var(--green);opacity:.6;line-height:1;margin-bottom:14px">02</div>
-        <div style="font-weight:700;font-size:1rem;color:var(--white);margin-bottom:10px">
+        <div style="font-weight:700;font-size:1rem;color:var(--t1);margin-bottom:10px">
           <span lang-en>We shop across licensed insurers</span><span lang-yo>A ra àwọn ẹlẹ́dáaabo tó ní ìwé àṣẹ</span><span lang-ig>Anyị na-ahọ n'etiti ndị mkpado a kwadoro</span><span lang-ha>Muna zaɓar tsakanin masu insho masu lasisi</span>
         </div>
-        <div style="font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.75">
+        <div style="font-size:.875rem;color:var(--t2);line-height:1.75">
           <span lang-en>AfriSure Shield compares vehicle policies from Nigerian licensed underwriters and health policies from registered HMOs — and recommends the best value, not the one that pays us the highest commission.</span>
           <span lang-yo>AfriSure Shield fiwéra àwọn ìlànà ọkọ láti ọ̀dọ̀ àwọn ẹlẹ́dáaabo Nàìjíríà tó ní ìwé àṣẹ àti àwọn ìlànà ilera láti ọ̀dọ̀ àwọn HMO tó forúkọ sílẹ̀ — a sì dábàá iye tó dára jù, kì í ṣe èyí tó san wa iye igbowó tó ga jù.</span>
           <span lang-ig>AfriSure Shield na-atụnyere iwu ụgbọ ala site n'ọdịnaya ndị mkpado Naịjirịa a kwadoro na iwu ahụike site n'HMO ndị debanye aha — ma na-atụ aro ihe bara uru karịa, ọ bụghị nke na-akwụ anyị ụgwọ kachasị.</span>
@@ -979,10 +1147,10 @@ footer{
 
       <div style="background:rgba(255,255,255,.04);border-radius:0 14px 14px 0;padding:32px 28px">
         <div style="font-family:var(--fs);font-size:3rem;color:var(--green);opacity:.4;line-height:1;margin-bottom:14px">03</div>
-        <div style="font-weight:700;font-size:1rem;color:var(--white);margin-bottom:10px">
+        <div style="font-weight:700;font-size:1rem;color:var(--t1);margin-bottom:10px">
           <span lang-en>We stay with you when things go wrong</span><span lang-yo>A wà pẹ̀lú rẹ nígbà tí ohun bá bàjẹ́</span><span lang-ig>Anyị na-anọ n'akụkụ gị mgbe ihe ọjọọ mere</span><span lang-ha>Muna tare da ku lokacin da abubuwa suka yi kuskure</span>
         </div>
-        <div style="font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.75">
+        <div style="font-size:.875rem;color:var(--t2);line-height:1.75">
           <span lang-en>When you need to make a claim, most people are on their own. AfriSure Shield stays in the process — submitting on your behalf, following up with the insurer, and using FraudShield AI to make sure the claim is assessed fairly and paid on time.</span>
           <span lang-yo>Nígbà tí o bá nílò láti ṣe ìkórè, àwọn ènìyàn tó pọ̀ wà nìkan. AfriSure Shield wà nínú ìlànà — tí ń fi ẹbẹ̀ sílẹ̀ fún ọ, tí ń tẹ̀lé ẹlẹ́dáaabo, àti tí ń lo AI FraudShield láti ríi dájú pé a ṣàyẹ̀wò ìkórè náà dáadáa.</span>
           <span lang-ig>Mgbe ị chọrọ imekwu mkpesa, ọtụtụ ndị mmadụ nọ naanị ha. AfriSure Shield na-anọ n'usoro — na-ebuga n'aha gị, na-eso onye mkpado, ma na-eji AI FraudShield iji hụ na a na-enyocha mkpesa ahụ nke ọma.</span>
@@ -1108,13 +1276,13 @@ footer{
 <section id="health" style="background:var(--off-black);padding:80px 48px" class="reveal"><span lang-yo>Aabo ilera</span><span lang-ig>Nchedo ahụike</span><span lang-ha>Kariyar lafiya</span></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
       <div>
-        <h2 class="stitle" style="color:var(--white)">
+        <h2 class="stitle" style="color:var(--t1)">
           <span lang-en>97% of Nigerians have<br/>no health insurance.<br/><em style="color:var(--green)">We can change that.</em></span>
           <span lang-yo>97% àwọn Nàìjíríà kò ní<br/>ẹ̀dá aabo ilera.<br/><em style="color:var(--green)">A lè yí iyẹn padà.</em></span>
           <span lang-ig>97% ndị Naịjirịa enweghị<br/>mkpado ahụike.<br/><em style="color:var(--green)">Anyị nwere ike gbanwee ya.</em></span>
           <span lang-ha>97% na Nijeriya ba su da<br/>inshorar lafiya.<br/><em style="color:var(--green)">Zamu iya canza hakan.</em></span>
         </h2>
-        <p style="font-size:.95rem;color:rgba(255,255,255,.5);line-height:1.8;margin-bottom:32px">
+        <p style="font-size:.95rem;color:var(--t2);line-height:1.8;margin-bottom:32px">
           <span lang-en>A single hospital admission in Lagos can cost a family ₦150,000–₦500,000 out of pocket. That is months of income for most households. AfriSure Shield brokers health cover from registered Nigerian HMOs — so you pay monthly, not in a crisis.</span>
           <span lang-yo>Wíwọ ìlé-ìwòsàn kan ní Lagos lè jẹ́ ẹbí ₦150,000–₦500,000 tààrà. Iyẹn jẹ́ oṣù ìnáwó fún àwọn ẹbí tó pọ̀. AfriSure Shield ń ṣiṣẹ bíi alagata fún aabo ilera láti ọ̀dọ̀ àwọn HMO Nàìjíríà tó forúkọ sílẹ̀.</span>
           <span lang-ig>Ọbịbị ụlọ ọgwụ otu n'Lagos nwere ike iru ezinụlọ ₦150,000–₦500,000 n'aka ha. Nke ahụ bụ ọnwa ego maka ụlọ ọrụ ọtụtụ. AfriSure Shield na-arụ ọrụ dị ka nnọchiteanya maka nchedo ahụike site n'HMO Naịjirịa ndị debanye aha.</span>
@@ -1123,19 +1291,19 @@ footer{
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="display:flex;align-items:flex-start;gap:12px">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:7px"></div>
-            <span style="font-size:.9rem;color:rgba(255,255,255,.6)"><strong style="color:var(--white)"><span lang-en>Individual cover</span><span lang-yo>Aabo ẹni kọọkan</span><span lang-ig>Nchedo otu onye</span><span lang-ha>Kariyar mutum ɗaya</span></strong> — <span lang-en>outpatient, emergency, and access to HMO hospital networks from as low as ₦500/month</span><span lang-yo>ìtọ́jú ìlode, pàjáwìrì, àti ànfàní sí àwọn nẹ́tíwọ̀ọ̀kì ilé-ìwòsàn HMO láti ₦500/oṣù</span><span lang-ig>ọgwụ n'ebe ọzọ, mberede, na ohere n'netwọk ụlọ ọgwụ HMO site na ₦500/ọnwa</span><span lang-ha>magani a waje, gaggawa, da damar shiga cibiyoyin asibiti HMO daga ₦500/wata</span></span>
+            <span style="font-size:.9rem;color:var(--t2)"><strong style="color:var(--t1)"><span lang-en>Individual cover</span><span lang-yo>Aabo ẹni kọọkan</span><span lang-ig>Nchedo otu onye</span><span lang-ha>Kariyar mutum ɗaya</span></strong> — <span lang-en>outpatient, emergency, and access to HMO hospital networks from as low as ₦500/month</span><span lang-yo>ìtọ́jú ìlode, pàjáwìrì, àti ànfàní sí àwọn nẹ́tíwọ̀ọ̀kì ilé-ìwòsàn HMO láti ₦500/oṣù</span><span lang-ig>ọgwụ n'ebe ọzọ, mberede, na ohere n'netwọk ụlọ ọgwụ HMO site na ₦500/ọnwa</span><span lang-ha>magani a waje, gaggawa, da damar shiga cibiyoyin asibiti HMO daga ₦500/wata</span></span>
           </div>
           <div style="display:flex;align-items:flex-start;gap:12px">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:7px"></div>
-            <span style="font-size:.9rem;color:rgba(255,255,255,.6)"><strong style="color:var(--white)"><span lang-en>SME group cover</span><span lang-yo>Aabo ẹgbẹ SME</span><span lang-ig>Nchedo otu SME</span><span lang-ha>Kariyar ƙungiyar SME</span></strong> — <span lang-en>cover your staff as a group, one invoice, one renewal, managed from your AfriSure Shield dashboard</span><span lang-yo>bò àwọn oṣiṣẹ rẹ gẹ́gẹ́ bí ẹgbẹ́, ìwé ìsanwó kan, ìsọdọ̀tun kan</span><span lang-ig>kpuchie ndị ọrụ gị dị ka otu, nnweta ụgwọ otu, nweghachi otu</span><span lang-ha>rufe ma'aikatanku a matsayin rukuni, kuɗin shiga ɗaya, sabuntawa ɗaya</span></span>
+            <span style="font-size:.9rem;color:var(--t2)"><strong style="color:var(--t1)"><span lang-en>SME group cover</span><span lang-yo>Aabo ẹgbẹ SME</span><span lang-ig>Nchedo otu SME</span><span lang-ha>Kariyar ƙungiyar SME</span></strong> — <span lang-en>cover your staff as a group, one invoice, one renewal, managed from your AfriSure Shield dashboard</span><span lang-yo>bò àwọn oṣiṣẹ rẹ gẹ́gẹ́ bí ẹgbẹ́, ìwé ìsanwó kan, ìsọdọ̀tun kan</span><span lang-ig>kpuchie ndị ọrụ gị dị ka otu, nnweta ụgwọ otu, nweghachi otu</span><span lang-ha>rufe ma'aikatanku a matsayin rukuni, kuɗin shiga ɗaya, sabuntawa ɗaya</span></span>
           </div>
           <div style="display:flex;align-items:flex-start;gap:12px">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:7px"></div>
-            <span style="font-size:.9rem;color:rgba(255,255,255,.6)"><strong style="color:var(--white)"><span lang-en>Telemedicine included</span><span lang-yo>Telemedicine wà</span><span lang-ig>Telemedicine gụnyere</span><span lang-ha>An haɗa telemedicine</span></strong> — <span lang-en>see a doctor from your phone, get prescriptions digitally, no queue, no transport cost</span><span lang-yo>rí dókítà lórí fóònu rẹ, gba àwọn ìlò oogun lórí ẹ̀rọ, kò sí àkójọ, kò sí iye ìrìnnà</span><span lang-ig>hụ dọkịta site na ekwentị gị, nweta ozi ọgwụ dijital, ọ dịghị ahịrị, ọ dụghị ụgwọ njem</span><span lang-ha>ganin likita daga wayar ka, samun rubutun magani ta dijital, babu jeri, babu kuɗin sufuri</span></span>
+            <span style="font-size:.9rem;color:var(--t2)"><strong style="color:var(--t1)"><span lang-en>Telemedicine included</span><span lang-yo>Telemedicine wà</span><span lang-ig>Telemedicine gụnyere</span><span lang-ha>An haɗa telemedicine</span></strong> — <span lang-en>see a doctor from your phone, get prescriptions digitally, no queue, no transport cost</span><span lang-yo>rí dókítà lórí fóònu rẹ, gba àwọn ìlò oogun lórí ẹ̀rọ, kò sí àkójọ, kò sí iye ìrìnnà</span><span lang-ig>hụ dọkịta site na ekwentị gị, nweta ozi ọgwụ dijital, ọ dịghị ahịrị, ọ dụghị ụgwọ njem</span><span lang-ha>ganin likita daga wayar ka, samun rubutun magani ta dijital, babu jeri, babu kuɗin sufuri</span></span>
           </div>
           <div style="display:flex;align-items:flex-start;gap:12px">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px"></div>
-            <span style="font-size:.9rem;color:rgba(255,255,255,.6)"><strong style="color:var(--white)"><span lang-en>Bundle with vehicle cover</span><span lang-yo>Papọ̀ pẹ̀lú aabo ọkọ</span><span lang-ig>Jikọọ ya na nchedo ụgbọ ala</span><span lang-ha>Haɗa da kariyar motoci</span></strong> — <span lang-en>combine vehicle and health into one AfriSure Shield subscription, one monthly payment in Naira</span><span lang-yo>papọ̀ aabo ọkọ àti ilera sí ìforúkọsílẹ̀ AfriSure Shield kan, ìsanwó oṣù kan ní Naira</span><span lang-ig>jikọọ ụgbọ ala na ahụike n'aha ndebanye aha AfriSure Shield otu, ịkwụ ụgwọ ọnwa otu na Naira</span><span lang-ha>haɗa motoci da lafiya cikin biyan AfriSure Shield ɗaya, biyan wata ɗaya cikin Naira</span></span>
+            <span style="font-size:.9rem;color:var(--t2)"><strong style="color:var(--t1)"><span lang-en>Bundle with vehicle cover</span><span lang-yo>Papọ̀ pẹ̀lú aabo ọkọ</span><span lang-ig>Jikọọ ya na nchedo ụgbọ ala</span><span lang-ha>Haɗa da kariyar motoci</span></strong> — <span lang-en>combine vehicle and health into one AfriSure Shield subscription, one monthly payment in Naira</span><span lang-yo>papọ̀ aabo ọkọ àti ilera sí ìforúkọsílẹ̀ AfriSure Shield kan, ìsanwó oṣù kan ní Naira</span><span lang-ig>jikọọ ụgbọ ala na ahụike n'aha ndebanye aha AfriSure Shield otu, ịkwụ ụgwọ ọnwa otu na Naira</span><span lang-ha>haɗa motoci da lafiya cikin biyan AfriSure Shield ɗaya, biyan wata ɗaya cikin Naira</span></span>
           </div>
         </div>
       </div>
@@ -1143,25 +1311,25 @@ footer{
       <!-- Health cover card -->
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden">
         <div style="background:rgba(0,229,107,.06);border-bottom:1px solid rgba(0,229,107,.12);padding:18px 22px;display:flex;align-items:center;justify-content:space-between">
-          <span style="font-size:.72rem;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.8px"><span lang-en>Health Plan</span><span lang-yo>Ètò Ilera</span><span lang-ig>Atụmatụ Ahụike</span><span lang-ha>Shirin Lafiya</span></span>
+          <span style="font-size:.72rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.8px"><span lang-en>Health Plan</span><span lang-yo>Ètò Ilera</span><span lang-ig>Atụmatụ Ahụike</span><span lang-ha>Shirin Lafiya</span></span>
           <span style="display:flex;align-items:center;gap:5px;font-size:.7rem;font-weight:700;color:var(--green);text-transform:uppercase"><span style="width:5px;height:5px;background:var(--green);border-radius:50%;animation:blink 2s infinite"></span>ACTIVE</span>
         </div>
         <div style="padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.06)">
-          <div style="font-size:.72rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px"><span lang-en>Insured</span><span lang-yo>Tí a ṣẹ ẹ̀dá aabo</span><span lang-ig>Onye mkpado</span><span lang-ha>Mai insho</span></div>
-          <div style="font-size:.95rem;font-weight:600;color:var(--white)">Adewale Ogundimu + 3 dependants</div>
+          <div style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px"><span lang-en>Insured</span><span lang-yo>Tí a ṣẹ ẹ̀dá aabo</span><span lang-ig>Onye mkpado</span><span lang-ha>Mai insho</span></div>
+          <div style="font-size:.95rem;font-weight:600;color:var(--t1)">Adewale Ogundimu + 3 dependants</div>
         </div>
         <div style="padding:16px 22px;display:grid;grid-template-columns:1fr 1fr;gap:12px;border-bottom:1px solid rgba(255,255,255,.06)">
-          <div><div style="font-size:.68rem;color:rgba(255,255,255,.3);margin-bottom:2px"><span lang-en>Plan type</span><span lang-yo>Irú ètò</span><span lang-ig>Ụdị atụmatụ</span><span lang-ha>Nau'in shiri</span></div><div style="font-size:.82rem;font-weight:600;color:var(--green)"><span lang-en>Standard</span><span lang-yo>Àpapọ̀</span><span lang-ig>Ọkọlọtọ</span><span lang-ha>Na yau</span></div></div>
-          <div><div style="font-size:.68rem;color:rgba(255,255,255,.3);margin-bottom:2px"><span lang-en>Hospital access</span><span lang-yo>Ànfàní ilé-ìwòsàn</span><span lang-ig>Ohere ụlọ ọgwụ</span><span lang-ha>Damar asibiti</span></div><div style="font-size:.82rem;font-weight:600;color:var(--white)">500+ <span lang-en>facilities</span><span lang-yo>àwọn ilé-ìwòsàn</span><span lang-ig>ụlọ ọgwụ</span><span lang-ha>cibiyoyi</span></div></div>
-          <div><div style="font-size:.68rem;color:rgba(255,255,255,.3);margin-bottom:2px"><span lang-en>Inpatient cover</span><span lang-yo>Aabo ìgbésí-ìlé</span><span lang-ig>Nchedo onye ime ụlọ ọgwụ</span><span lang-ha>Kariyar marasa lafiya</span></div><div style="font-size:.82rem;font-weight:600;color:var(--white)">₦500,000</div></div>
-          <div><div style="font-size:.68rem;color:rgba(255,255,255,.3);margin-bottom:2px"><span lang-en>Telemedicine</span></div><div style="font-size:.82rem;font-weight:600;color:var(--green)">✓ <span lang-en>Included</span><span lang-yo>Wà</span><span lang-ig>Gụnyere</span><span lang-ha>An haɗa</span></div></div>
+          <div><div style="font-size:.68rem;color:var(--t3);margin-bottom:2px"><span lang-en>Plan type</span><span lang-yo>Irú ètò</span><span lang-ig>Ụdị atụmatụ</span><span lang-ha>Nau'in shiri</span></div><div style="font-size:.82rem;font-weight:600;color:var(--green)"><span lang-en>Standard</span><span lang-yo>Àpapọ̀</span><span lang-ig>Ọkọlọtọ</span><span lang-ha>Na yau</span></div></div>
+          <div><div style="font-size:.68rem;color:var(--t3);margin-bottom:2px"><span lang-en>Hospital access</span><span lang-yo>Ànfàní ilé-ìwòsàn</span><span lang-ig>Ohere ụlọ ọgwụ</span><span lang-ha>Damar asibiti</span></div><div style="font-size:.82rem;font-weight:600;color:var(--t1)">500+ <span lang-en>facilities</span><span lang-yo>àwọn ilé-ìwòsàn</span><span lang-ig>ụlọ ọgwụ</span><span lang-ha>cibiyoyi</span></div></div>
+          <div><div style="font-size:.68rem;color:var(--t3);margin-bottom:2px"><span lang-en>Inpatient cover</span><span lang-yo>Aabo ìgbésí-ìlé</span><span lang-ig>Nchedo onye ime ụlọ ọgwụ</span><span lang-ha>Kariyar marasa lafiya</span></div><div style="font-size:.82rem;font-weight:600;color:var(--t1)">₦500,000</div></div>
+          <div><div style="font-size:.68rem;color:var(--t3);margin-bottom:2px"><span lang-en>Telemedicine</span></div><div style="font-size:.82rem;font-weight:600;color:var(--green)">✓ <span lang-en>Included</span><span lang-yo>Wà</span><span lang-ig>Gụnyere</span><span lang-ha>An haɗa</span></div></div>
         </div>
         <div style="padding:14px 22px;background:rgba(0,229,107,.05);display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.06)">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00E56B" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-          <div><div style="font-size:.75rem;font-weight:600;color:var(--green)">FraudShield AI — Active</div><div style="font-size:.68rem;color:rgba(255,255,255,.35)"><span lang-en>All claims verified before payout</span><span lang-yo>Gbogbo ìkórè ni a fọwọ́sí</span><span lang-ig>A na-enyocha mkpesa ọ bụla</span><span lang-ha>Ana tabbatar da duk iƙirari</span></div></div>
+          <div><div style="font-size:.75rem;font-weight:600;color:var(--green)">FraudShield AI — Active</div><div style="font-size:.68rem;color:var(--t3)"><span lang-en>All claims verified before payout</span><span lang-yo>Gbogbo ìkórè ni a fọwọ́sí</span><span lang-ig>A na-enyocha mkpesa ọ bụla</span><span lang-ha>Ana tabbatar da duk iƙirari</span></div></div>
         </div>
         <div style="padding:14px 22px;display:flex;align-items:center;justify-content:space-between">
-          <div><div style="font-size:.68rem;color:rgba(255,255,255,.3);margin-bottom:2px"><span lang-en>Also covered</span><span lang-yo>Tún bò</span><span lang-ig>Ọ dịkwa na-ekpuchi</span><span lang-ha>Kuma ana rufe</span></div><div style="font-size:.78rem;font-weight:600;color:var(--white)"><span lang-en>Vehicle · LGS-247-EA</span><span lang-yo>Ọkọ · LGS-247-EA</span><span lang-ig>Ụgbọ ala · LGS-247-EA</span><span lang-ha>Motarka · LGS-247-EA</span></div></div>
+          <div><div style="font-size:.68rem;color:var(--t3);margin-bottom:2px"><span lang-en>Also covered</span><span lang-yo>Tún bò</span><span lang-ig>Ọ dịkwa na-ekpuchi</span><span lang-ha>Kuma ana rufe</span></div><div style="font-size:.78rem;font-weight:600;color:var(--t1)"><span lang-en>Vehicle · LGS-247-EA</span><span lang-yo>Ọkọ · LGS-247-EA</span><span lang-ig>Ụgbọ ala · LGS-247-EA</span><span lang-ha>Motarka · LGS-247-EA</span></div></div>
           <div style="background:rgba(245,200,66,.1);border:1px solid rgba(245,200,66,.2);border-radius:6px;padding:5px 10px;font-size:.7rem;font-weight:700;color:#F5C842"><span lang-en>Bundled</span><span lang-yo>Papọ̀</span><span lang-ig>Jikọọ</span><span lang-ha>Haɗe</span></div>
         </div>
       </div>
@@ -1376,7 +1544,7 @@ footer{
             <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
           </div>
           <div>
-            <div class="arch-name" style="color:rgba(255,255,255,.4)">National registries (planned)</div>
+            <div class="arch-name" style="color:var(--t2)">National registries (planned)</div>
             <div class="arch-desc"><span lang-en>Official national identity and vehicle registries</span><span lang-yo>Àwọn àkójọpọ̀ data ìdánimọ̀ àti ọkọ ti orílẹ̀-èdè</span><span lang-ig>Ndepụta nnabata na ụgbọ ala ọchụchọ mba</span><span lang-ha>Hukumomin shayarwa da rajistan motoci na ƙasa</span></div>
           </div>
           <span class="arch-tag tag-infra"><span lang-en>Infrastructure</span><span lang-yo>Àwọn ohun-èlò</span><span lang-ig>Ihe ndabere</span><span lang-ha>Ababen more</span></span>
@@ -1516,13 +1684,29 @@ footer{
   </div>
   <div class="footer-bottom">
     <p>© 2026 AfriSure Shield · <span lang-en>Insurance Broker · Powered by FraudShield AI · Built in Lagos</span><span lang-yo>Agbara FraudShield AI · A dá ní Lagos</span><span lang-ig>Ike site na FraudShield AI · Arụrụ n'Lagos</span><span lang-ha>Ƙarfin FraudShield AI · An gina a Lagos</span></p>
-    <p style="font-family:var(--fm);font-size:.65rem;color:rgba(255,255,255,.1)">v0.2.0-beta</p>
+    <p style="font-family:var(--fm);font-size:.65rem;color:var(--t3)">v0.2.0-beta</p>
   </div>
 </footer>
 
 
 
 <script>
+
+// ── Theme toggle ──────────────────────────────────────────────
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+  const next = isDark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('as-theme', next); } catch(e){}
+}
+// Apply saved theme immediately
+(function(){
+  try {
+    const saved = localStorage.getItem('as-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch(e){}
+})();
+
 // ── Language system ──────────────────────────────────────────
 let curLang = 'en';
 function applyLang(lang) {
